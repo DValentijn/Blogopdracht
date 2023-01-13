@@ -1,0 +1,37 @@
+@props(['title' => 'Blog'])
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    @vite('resources/css/app.css')
+    <title>{{ $title }}</title>
+</head>
+
+
+<body>
+    <x-nav></x-nav>
+    {{ $slot }}
+</body>
+
+</html>
+
+<style>
+    body {
+        font-family: Merriweather;
+        background-image: url("https://dylanovalentijn.nl/img/backgrounddv.png");
+    
+    }
+
+     .shadow-md {
+        background-color: #ffffff;
+     }
+     img {
+        height: 250px;
+        margin: auto;
+     }
+    </style>
